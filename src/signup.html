@@ -16,7 +16,7 @@
             </a>
             
         </div>
-        <div class="scroll-container" style="overflow-y: scroll; width: 500px; height: 150px; padding:4px;">
+        <div class="scroll-container" style="overflow-y: scroll; width: 700px; height: 250px; padding:4px;">
             개인정보보호법에 따라 개편한 세상에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.<br />
             <br />
             1. 수집하는 개인정보 이용자는 회원가입을 하지 않아도 정보 검색, 쇼핑하기 등 대부분의 개편한 세상 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 쇼핑, 후기 작성 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 개편한 세상은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
@@ -34,7 +34,7 @@
             서비스 이용 과정에)서 IP 주소, 쿠키, 서비스 이용 기록, 기기정보, 위치정보가 생성되어 수집될 수 있습니다. 또한 이미지 및 음성을 이용한 검색 서비스 등에서 이미지나 음성이 수집될 수 있습니다.
             구체적으로 1) 서비스 이용 과정에서 이용자에 관한 정보를 자동화된 방법으로 생성하여 이를 저장(수집)하거나,<br />
             2) 이용자 기기의 고유한 정보를 원래의 값을 확인하지 못 하도록 안전하게 변환하여 수집합니다. 서비스 이용 과정에서 위치정보가 수집될 수 있으며,
-            개편한 세상에서 제공하는 위치기반 서비스에 대해서는 '네이버 위치기반서비스 이용약관'에서 자세하게 규정하고 있습니다.
+            개편한 세상에서 제공하는 위치기반 서비스에 대해서는 '개편한 세상 위치기반서비스 이용약관'에서 자세하게 규정하고 있습니다.
             이와 같이 수집된 정보는 개인정보와의 연계 여부 등에 따라 개인정보에 해당할 수 있고, 개인정보에 해당하지 않을 수도 있습니다.<br />
             <br />
             2. 수집한 개인정보의 이용
@@ -64,21 +64,25 @@
             - 통신비밀보호법
             로그인 기록: 3개월
             참고로 개편한 세상은 ‘개인정보 유효기간제’에 따라 1년간 서비스를 이용하지 않은 회원의 개인정보를 별도로 분리 보관하여 관리하고 있습니다.<br />
-
+            <br />
             4. 개인정보 수집 및 이용 동의를 거부할 권리<br />
             이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 회원가입 시 수집하는 최소한의 개인정보, 즉, 필수 항목에 대한 수집 및 이용 동의를 거부하실 경우, 회원가입이 어려울 수 있습니다.
 
         </div>
-        <label><input type="radio" name="PIagree" value="agree">개인정보 수집 및 이용 동의(필수)</label>
+        <div id="PIagree-container">
+            <label class="ag"><input type="radio" name="PIagree" value="agree">개인정보 수집 및 이용 동의(필수)</label>
+        </div>
+        
         <div id="container2">
             <form action="#" id="register">
                 <ul id="user-info">
                     <li>
                         <label for="user-id" class="field">아이디</label>
                         <input type="text" id="user-id" placeholder="4~15자리의 영문과 숫자로 입력" required>
+                        <button type="id-dpcheck" class="btn btnIDcheck">중복검사</button>
                     </li>
                     <li>
-                        <label for="user-pw1" class="field">비밀번호</label>
+                        <label for="user-pnw1" class="field">비밀번호</label>
                         <input type="password" id="user-pw1" placeholder="8자리 이상" required>
                     </li>
                     <li>
@@ -86,11 +90,15 @@
                         <input type="password" id="user-pw2" required>
                     </li>
                     <li>
+                        <label for="tel" class="field">전화번호</label>
+                        <input type="tel" id="tel" required>
+                    </li>
+                    <li>
                         <label for="email" class="field">이메일</label>
                         <input type="email" id="email" required>
                     </li>
                     <li>
-                        <label class="field">메일링 수신</label>
+                        <label class="field">이메일 수신</label>
                         <label class="r"><input type="radio" value="yes" name="mailing">예</label>
                         <label class="r"><input type="radio" value="no" name="mailing">아니오</label>
                     </li>
