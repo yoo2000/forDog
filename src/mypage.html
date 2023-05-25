@@ -1,7 +1,64 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hello world</title>
-	</head>
-<p>마이페이지</p>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Layouts</title>
+	<style>
+        ul {
+            margin: 5px;
+            padding: 5px;
+        }
+		#top {
+			background-color:lightgrey;
+			height:200px;
+		}
+		#sidebar {
+			background-color:#339999;
+			color:white;
+			width:150px;
+			height:600px;
+			float:left;
+		}
+		#section {
+            height:600px;
+			text-align:left;
+            float:left;
+			margin:10px;
+		}
+        #section ul a{
+            float:right;
+            text-decoration-line: none;
+        }
+		#footer {
+			background-color:#FFCC00;
+			height:100px;
+			clear:both;
+		}
+		#sidebar, #footer { text-align:center; }
+		#footer { line-height:100px; }
+		#sidebar { line-height:240px; }
+	</style>
+</head>
+
+<body>
+
+	<ul id="top">
+        <h1>상단바</h1>
+    </ul>
+	<ul id="sidebar">
+		<h2>사이드바</h2>
+    </ul>
+	<ul id="section">
+		<p>이름: <br>아이디: <br>이메일: <br>전화번호: <br>자주 배송하는 주소: </p>
+        <a href="http://localhost/mypage/ch_pawd">비밀번호 변경</a>
+        <br>
+        <a href="http://localhost/mypage/del_user">회원탈퇴</a>
+    </ul>
+	<ul id="footer">
+		<h2>하단바 영역</h2>
+    </ul>
+
+</body>
+
 </html>
