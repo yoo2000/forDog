@@ -1,7 +1,74 @@
-<!DOCTYPE html>
+
 <html>
-	<head>
-		<title>Hello world</title>
-	</head>
-<p>로그인</p>
+<head>
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/header.css">
+</head>
+<header>
+    <ul class="box_head-content">
+        <h1 class="box_title-logo">
+            <a href="#" title="개편한세상" target class="link_head"><img src="img/doge-removebg-preview.png" width="100" height="100" class="image_logo" alt="개편한세상"></a>
+        </h1>
+        &nbsp;  <!--로고 검색창 사이 간격-->
+        <ul class="box_head-search">
+            <form method="get" action="" name class="form" accept-charset="UTF-8">
+                <fieldset id="skip-navigation-search" class="form_fieldset">
+                    <legend class="for-a11y">검색</legend>
+                    <span class="box_search-input">
+                        <label for="form_search-keyboard" class="for-a11y">상품검색</label>
+                        <input name="keyboard" title="검색창" class="form_input" placeholder type="text">
+                        <button type="submit" class="button_search">
+                            <img src="img/dotbogi_22-22.jpg" class="image" loading="lazy" decoding="async" alt="검색">
+                        </button>
+                    </span>
+                </fieldset>
+            </form>
+        </ul>
+
+        <ul class="box__usermenu">
+            <ul class="list__usermenu">
+                <li class="list-item">
+                    <a href="login.html" class="link__usermenu">로그인</a>
+                </li>
+                <li class="list-item">
+                    <a href="signup.html" class="link__usermenu">회원가입</a>
+                </li>
+                <li class="list-item">
+                    <a href="mypage.html" class="link__usermenu">마이페이지</a>
+                </li>
+                <li class="list-item">
+                    <a href="cart.html" class="link__usermenu">장바구니</a>
+                </li>
+            </ul>
+        </ul>
+    </ul>
+</header>
+<body>
+    <div class="login-wrapper" style ="margin-top:500px;margin-buttom:500px">
+        <h2>개편한세상</h2>
+        <form method="post" action="서버의url" id="login-form">
+            <input type="text" name="userName" placeholder="id">
+            <input type="password" name="userPassword" placeholder="Password">
+            <input type="submit" value="Login">
+            <p>
+            <a href = "회원가입url" target = "blank" >
+                계정이 없으신가요?</a>
+            </p>
+        </form>
+    </div>
+</body>
+<footer>
+<div style="width:100%; height:200px; margin: auto; background-color:#F6F6F6">
+
+    <li><a href="index.html">index.html</a></li>
+    <li><a href="signup.html">signup</a></li>
+    <li><a href="login.html">login</a></li>
+    <li><a href="IDfind.html">IDfind</a></li>
+    <li><a href="PWfind.html">PWfind</a></li>
+    <li><a href="cart.html">cart</a></li>
+    <li><a href="category.html">category</a></li>
+    <li><a href="mypage.html">mypage</a></li>
+    <li><a href="ProductionPage.html">ProductionPage</a></li>
+</div>
+</footer>
 </html>

@@ -3,17 +3,20 @@
     padding: 0;
 }
 
-# header * {
+#header * {
     font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', 'Gmarket Sans', sans-serif;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background-color:#F5DA81;
 }
-body { /상단바 아래 컨텐츠 들어갈 부분/
-    padding: 120px;
+
+body { 
+    margin-top:120px;
 }
 *, ::before, ::after {
     --tw-border-spacing-x: 0;

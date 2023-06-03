@@ -1,0 +1,103 @@
+#container {
+    width:600px;
+    margin:50px auto;
+    text-align: center;
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    width: 700px;
+    height: 250px;
+    padding: 4px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #aba4a4;
+}
+
+#PIagree-container{
+	width:700px;
+	margin: 0 auto;
+}
+
+.ag {
+	float:right;
+	line-height: 45px;
+	text-align:right;
+	
+}
+
+#container2{
+	width:600px;
+	margin:0 auto;
+	padding: 70px;
+}
+ul {
+	list-style:none;
+}
+ul li {
+	clear:both;
+}
+
+button[type="id-dpcheck"] {
+	width:88px;
+	height:45px;
+	margin:10px 0;
+	border:1px solid #ccc;
+	background:#f7b72e;
+	font-size:0.9em;
+    font-weight:bold;
+	float:right;
+	padding:5px;
+}
+
+.field {
+	float:left;
+	width:100px;
+	font-weight:bold;
+	font-size:0.9em;
+	line-height: 25px;
+	text-align:left;
+	margin-right:15px;
+}
+input[type="text"] {
+	float:left;
+	width:450px;
+	height:35px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	padding:5px;
+	margin:10px 0;
+	float:left;
+	margin-bottom: 30px;
+}
+input[type="password"], input[type="tel"], input[type="email"] {
+	float:left;
+	width:450px;
+	height:35px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	padding:5px;
+	margin:10px 0;
+	float:left;
+	margin-bottom: 30px;
+}
+
+
+.r {
+	line-height:25px;
+}
+
+#buttons > li {
+	display:inline-block;
+}
+button[type="submit"] {
+	width:462px;
+	height:50px;
+	margin: 0 auto;
+	border:1px solid #ccc;
+	background:#f7b72e;
+	font-size:0.9em;
+    font-weight:bold;
+	margin-top: 30px
+}
