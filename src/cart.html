@@ -3,11 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/header.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>개편한세상 : 장바구니</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/cart.css"> 
 </head>
+<header>
+    <ul class="box_head-content">
+        <h1 class="box_title-logo">
+            <a href="index.html" title="개편한세상" target class="link_head"><img src="img/doge-removebg-preview.png" width="100" height="100" class="image_logo" alt="개편한세상"></a>
+        </h1>
+        &nbsp;  <!--로고 검색창 사이 간격-->
+        <ul class="box_head-search">
+            <form method="get" action="" name class="form" accept-charset="UTF-8">
+                <fieldset id="skip-navigation-search" class="form_fieldset">
+                    <legend class="for-a11y">검색</legend>
+                    <span class="box_search-input">
+                        <label for="form_search-keyboard" class="for-a11y">상품검색</label>
+                        <input name="keyboard" title="검색창" class="form_input" placeholder type="text">
+                        <button type="submit" class="button_search">
+                            <img src="img/dotbogi_22-22.jpg" class="image" loading="lazy" decoding="async" alt="검색">
+                        </button>
+                    </span>
+                </fieldset>
+            </form>
+        </ul>
+
+        <ul class="box__usermenu">
+            <ul class="list__usermenu">
+                <li class="list-item">
+                    <a href="login.html" class="link__usermenu">로그인</a>
+                </li>
+                <li class="list-item">
+                    <a href="signup.html" class="link__usermenu">회원가입</a>
+                </li>
+                <li class="list-item">
+                    <a href="mypage.html" class="link__usermenu">마이페이지</a>
+                </li>
+                <li class="list-item">
+                    <a href="cart.html" class="link__usermenu">장바구니</a>
+                </li>
+            </ul>
+        </ul>
+    </ul>
+</header>
 <body>
 
     <form name="orderform" id="orderform" method="post" class="orderform" action="/Page" onsubmit="return false;">
